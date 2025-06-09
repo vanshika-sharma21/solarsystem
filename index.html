@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solar System Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div id="info">
+        <h1>Solar System Simulation</h1>
+        <button id="toggle-controls">☰ Controls</button>
+    </div>
+    
+    <div id="controls">
+        <h3>Planet Speed Controls</h3>
+        <div class="control-group">
+            <label for="mercury-speed">Mercury <span class="speed-value">4x</span></label>
+            <input type="range" id="mercury-speed" min="0" max="8" step="0.1" value="4">
+        </div>
+        <div class="control-group">
+            <label for="venus-speed">Venus <span class="speed-value">1.6x</span></label>
+            <input type="range" id="venus-speed" min="0" max="8" step="0.1" value="1.6">
+        </div>
+        <div class="control-group">
+            <label for="earth-speed">Earth <span class="speed-value">1x</span></label>
+            <input type="range" id="earth-speed" min="0" max="8" step="0.1" value="1">
+        </div>
+        <div class="control-group">
+            <label for="mars-speed">Mars <span class="speed-value">0.5x</span></label>
+            <input type="range" id="mars-speed" min="0" max="8" step="0.1" value="0.5">
+        </div>
+        <div class="control-group">
+            <label for="jupiter-speed">Jupiter <span class="speed-value">0.08x</span></label>
+            <input type="range" id="jupiter-speed" min="0" max="8" step="0.1" value="0.08">
+        </div>
+        <div class="control-group">
+            <label for="saturn-speed">Saturn <span class="speed-value">0.03x</span></label>
+            <input type="range" id="saturn-speed" min="0" max="8" step="0.1" value="0.03">
+        </div>
+        <div class="control-group">
+            <label for="uranus-speed">Uranus <span class="speed-value">0.01x</span></label>
+            <input type="range" id="uranus-speed" min="0" max="8" step="0.1" value="0.01">
+        </div>
+        <div class="control-group">
+            <label for="neptune-speed">Neptune <span class="speed-value">0.006x</span></label>
+            <input type="range" id="neptune-speed" min="0" max="8" step="0.1" value="0.006">
+        </div>
+        <div class="control-buttons">
+            <button id="pause-btn">⏸ Pause</button>
+            <button id="dark-mode">🌙 Dark Mode</button>
+            <button id="reset-view">🔭 Reset View</button>
+        </div>
+    </div>
+    
+    <div id="tooltip"></div>
+    <script src="script.js"></script>
+</body>
+</html>
